@@ -16,12 +16,6 @@ print(f"Taille de l'image : hauteur = {h}, largeur = {w}")
 im2 = cv2.resize(im1, (w // 2, h // 2))
 
 
-
-
-
-
-
-
 y_start, y_end = 30, 150
 x_start, x_end = 200, 400
 im3 = im1[y_start:y_end, x_start:x_end]
@@ -35,7 +29,7 @@ cv2.putText(im4, "Mon rectangle", (200, 20), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (0, 
 
 
 im5 = cv2.rotate(im1, cv2.ROTATE_90_CLOCKWISE)
-
+# im5=cv2.warpAffine(im1, (200, 200), (200, 200))
 
 im6 = cv2.GaussianBlur(im1, (15, 15), 0)
 
