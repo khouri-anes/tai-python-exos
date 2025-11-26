@@ -48,6 +48,17 @@ def calculate_psnr(im1, im2):
     return psnr
 
 
+
+
+
+
+
+
+
+
+
+
+
 im1 = cv2.imread('Images/cameraman.bmp', cv2.IMREAD_GRAYSCALE)
 
 im2 = cv2.imread('Images/cameraman_bruit_gauss_sig0_001.bmp', cv2.IMREAD_GRAYSCALE)
